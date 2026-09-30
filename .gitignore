@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Node (only needed if you run the optional jsdom UI test)
+node_modules/
+package-lock.json
+npm-debug.log*
