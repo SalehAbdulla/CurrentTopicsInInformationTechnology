@@ -142,7 +142,8 @@ addQuestions([
       "By 2026, concerns around bias and privacy take centre stage",
       "Organisations will be held accountable for ethical AI development, leading to robust frameworks",
       "By 2027, federated learning and differential privacy become standard techniques",
-      "By 2027, AI will be able to guarantee zero data breaches by design"
+      "By 2027, AI will be able to guarantee zero data breaches by design",
+      "By 2027, training data will no longer need to be collected from real users at all"
     ],
     answer: [0, 1, 2],
     why: "The timeline mentions bias/privacy concerns driving accountability and frameworks in 2026, and federated learning + differential privacy becoming standard in 2027. 'Zero breaches guaranteed' is not stated anywhere.",
@@ -176,7 +177,8 @@ addQuestions([
       "A set of regulations AI development must follow",
       "A set of guidelines AI development must follow",
       "A set of constraints AI development must follow",
-      "A set of hardware requirements for AI data centres"
+      "A set of hardware requirements for AI data centres",
+      "A set of licence fees that AI vendors must pay to their national regulator"
     ],
     answer: [0, 1, 2],
     why: "The definition covers moral values plus regulations, guidelines and constraints. Hardware requirements are not part of the ethical definition.",
@@ -203,9 +205,9 @@ addQuestions([
     q: "Which everyday examples are used to show that AI is already part of daily life?",
     options: [
       "Posting pictures to social media, searching online and asking questions from chatbots",
-      "Only self-driving cars and industrial robots",
-      "Only military drones and satellites",
-      "Only medical imaging equipment in hospitals"
+      "Only self-driving cars, industrial robots and other autonomous physical machines",
+      "Only military drones, satellites and other defence systems that operate outside everyday civilian life",
+      "Only hospital equipment, such as MRI scanners and diagnostic imaging software"
     ],
     answer: [0],
     why: "Social-media posting, online search and chatbot Q&A are the everyday AI touchpoints listed, alongside cities using AI for public services.",
@@ -217,10 +219,10 @@ addQuestions([
     topic: "What is ethical AI",
     type: "tf",
     diff: "medium",
-    q: "The slides state that governments are seeking solutions to global problems using algorithmically produced knowledge.",
+    q: "The slides state that public authorities deliberately avoid algorithmically produced knowledge when designing public services.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — 'governments are seeking solutions to global problems by using algorithmically produced knowledge'.",
+    answer: [1],
+    why: "False — the slides say the opposite: authorities such as cities rely on AI for public services, and governments seek solutions to global problems by using algorithmically produced knowledge.",
     ref: "Deck 1 · slide 5"
   },
   {
@@ -251,7 +253,8 @@ addQuestions([
       "The selected people were very good candidates",
       "The system performed better than HR at selecting good candidates",
       "All ML metrics showed stunning performance",
-      "An external audit had certified the system as unbiased"
+      "An external audit had certified the system as unbiased",
+      "The system flagged its own hiring decisions as potentially discriminatory"
     ],
     answer: [0, 1, 2],
     why: "Good candidates, better-than-human performance and stunning ML metrics are exactly why the bias is hard to detect. No audit had certified it.",
@@ -298,7 +301,8 @@ addQuestions([
       "Sports or activities more common in one group (e.g. cheerleader)",
       "Disorders that are more common in one race",
       "Associations such as a female chess team",
-      "The file size of the candidate's CV PDF"
+      "The file size of the candidate's CV PDF",
+      "Membership of a professional engineering or accountancy body"
     ],
     answer: [0, 1, 2, 3],
     why: "Colleges/geography, sports and activities, race-linked disorders, and associations are all listed inference routes. File size is never mentioned.",
@@ -313,9 +317,9 @@ addQuestions([
     q: "What is the core lesson of the CV-screening case study?",
     options: [
       "A model can be biased and still look excellent on every technical metric, so bias must be audited for explicitly",
-      "Machine learning should never be used in recruitment",
-      "Removing sensitive attributes is always sufficient to make a model fair",
-      "Human HR staff never make biased decisions"
+      "Machine learning should never be used in recruitment because it is inherently biased",
+      "Removing the sensitive attributes is always sufficient to make a model perfectly fair",
+      "Human HR staff never make biased hiring decisions of their own accord"
     ],
     answer: [0],
     why: "The example shows undetectable-but-harmful bias: real-world outcomes and metrics look good, so fairness has to be assessed directly rather than inferred from accuracy.",
@@ -332,7 +336,8 @@ addQuestions([
       "Individuals unjustly denied meaningful employment",
       "Denial of access to loans and housing",
       "Increased surveillance from law enforcement",
-      "Guaranteed increases in company profits"
+      "Guaranteed increases in company profits",
+      "Lower cloud computing and storage costs for the deploying organisation"
     ],
     answer: [0, 1, 2],
     why: "The slide lists unjust denial of employment, denial of loans and housing, and increased law-enforcement surveillance.",
@@ -491,7 +496,8 @@ addQuestions([
       "For what purpose was the data collected, and how was it collected?",
       "Do you know who labeled the data, and do you trust them?",
       "Have you checked the labels when the dataset was downloaded or extracted?",
-      "Is the dataset large enough to reach 99% accuracy?"
+      "Is the dataset large enough to reach 99% accuracy?",
+      "How much will it cost per gigabyte to store this dataset in the cloud?"
     ],
     answer: [0, 1, 2],
     why: "The slide lists purpose/provenance, trust in collection and labelling, checking labels, and how the data source was assessed. Dataset size vs 99% accuracy is not on the list.",
@@ -537,7 +543,8 @@ addQuestions([
       "Emotion recognition and expression",
       "Style of writing, gestures and voice tone",
       "Societal values and accepted norms",
-      "The IEEE floating-point standard"
+      "The IEEE floating-point standard",
+      "The bandwidth of the internet connection used to collect the data"
     ],
     answer: [0, 1, 2],
     why: "Emotion recognition/expression, writing style/gestures/voice tone, and societal values/norms all differ culturally.",
@@ -574,7 +581,7 @@ addQuestions([
     type: "multi",
     diff: "medium",
     q: "Which practices belong to the 'Unacceptable risk' (prohibited) tier? (Select all that apply.)",
-    options: ["Social scoring", "Mass surveillance", "Manipulation of behaviour", "Causing harm", "Chatbots"],
+    options: ["Social scoring", "Mass surveillance", "Manipulation of behaviour", "Causing harm", "Chatbots", "Emotion recognition systems, which carry only a transparency obligation"],
     answer: [0, 1, 2, 3],
     why: "Social scoring, mass surveillance, manipulation of behaviour and causing harm are all listed as unacceptable/prohibited. Chatbots are only a limited-risk transparency case.",
     ref: "Deck 1 · slide 18"
@@ -607,7 +614,8 @@ addQuestions([
       "Law enforcement",
       "Access to employment",
       "Education and public services",
-      "Emotion recognition"
+      "Emotion recognition",
+      "Chatbots and other limited-risk transparency cases"
     ],
     answer: [0, 1, 2],
     why: "High risk = law enforcement, access to employment, and education/public services. Emotion recognition is grouped under limited risk (transparency obligation).",
@@ -659,7 +667,8 @@ addQuestions([
       "Control of critical infrastructure",
       "Credit scoring and hiring",
       "Healthcare",
-      "Course projects and theses"
+      "Course projects and theses",
+      "Social media content-recommendation feeds for consumer apps"
     ],
     answer: [0, 1, 2, 3],
     why: "Diagnosis, control of critical infrastructure, law enforcement, credit scoring, hiring and healthcare are listed as critical. Course projects/theses are explicitly described as where the risk 'may not be a huge problem'.",
@@ -741,10 +750,10 @@ addQuestions([
     topic: "Mitigation & bias tools",
     type: "tf",
     diff: "medium",
-    q: "The recruitment example for re-sampling suggests oversampling female candidates (or augmenting data) if a tech-role dataset contains many more male than female applicants.",
+    q: "The slides' re-sampling example recommends deleting the male applicants from the dataset so that the remaining data is perfectly balanced.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — that is the exact example given for re-sampling/data augmentation.",
+    answer: [1],
+    why: "False — re-sampling means oversampling the minority group OR undersampling the majority group; the recruitment example oversamples female candidates or applies data augmentation. It never suggests deleting a group.",
     ref: "Deck 1 · slide 20"
   },
   {
@@ -756,9 +765,9 @@ addQuestions([
     q: "How does adversarial debiasing work?",
     options: [
       "One model learns the primary task while another tries to predict demographic variables, and the system is optimised so demographics do not influence predictions",
-      "The sensitive attribute is simply deleted from the dataset",
-      "Different decision thresholds are applied to each group after training",
-      "The model is trained only on perfectly balanced synthetic data"
+      "The sensitive attribute is simply deleted from the dataset before training, so the model never sees gender, race or other protected attributes",
+      "Different decision thresholds are applied to each group after training, so that approval rates are equalised across the groups without changing the underlying model",
+      "The model is trained only on perfectly balanced synthetic data generated to remove every historical disparity from the original training set"
     ],
     answer: [0],
     why: "Adversarial debiasing trains a primary-task model alongside an adversary that predicts demographics (e.g. gender), optimising so that demographic information does not influence predictions.",
@@ -787,7 +796,8 @@ addQuestions([
       "IBM AI Fairness 360 (AIF360)",
       "Fairness Indicators by Google",
       "Microsoft Fairlearn",
-      "TensorFlow Privacy Auditor"
+      "TensorFlow Privacy Auditor",
+      "The Google Model Cards toolkit for documenting model limitations"
     ],
     answer: [0, 1, 2],
     why: "AIF360 (IBM), Fairness Indicators (Google) and Fairlearn (Microsoft) are the three tools listed. 'TensorFlow Privacy Auditor' is invented.",
@@ -862,10 +872,10 @@ addQuestions([
     topic: "Fairness: the problem",
     type: "tf",
     diff: "medium",
-    q: "The credit scores in the exercise were produced by a model trained on historical data, which historically scored men higher than women.",
+    q: "In the loan exercise the credit scores were assigned at random, so gender could not have influenced the ranking.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — the slide notes credit scoring has historically been higher for men versus women, and the model produced these values from the historical data it was trained on.",
+    answer: [1],
+    why: "False — the scores came from a model trained on historical data in which credit scoring was higher for men than for women, so the ranking already carries that historical bias.",
     ref: "Deck 2 · slide 4"
   },
   {
@@ -877,9 +887,9 @@ addQuestions([
     q: "What is the key theoretical limitation the slides highlight about fairness criteria?",
     options: [
       "You cannot in general satisfy multiple fairness criteria at once when groups have different base rates (the classic impossibility results)",
-      "Fairness can always be achieved by deleting the sensitive attribute",
-      "Only one fairness criterion exists in the literature",
-      "Fairness criteria are all mathematically identical"
+      "Fairness can always be achieved by deleting the sensitive attribute, because a model cannot use information it never receives",
+      "Only one fairness criterion exists in the literature, and it is the single metric that all regulators currently require organisations to publish",
+      "Fairness criteria are all mathematically identical, so the choice between them is purely a matter of presentation and terminology"
     ],
     answer: [0],
     why: "Because base rates differ, the classic impossibility results mean you must pick the metric matching your real-world objective and document the trade-offs.",
@@ -911,9 +921,9 @@ addQuestions([
     q: "'Fairness through unawareness' means:",
     options: [
       "Ignoring gender/race in the features and being oblivious to group membership",
-      "Applying different score thresholds per group",
-      "Matching true positive rates across groups",
-      "Auditing the model after deployment"
+      "Applying a different score threshold to each group after training",
+      "Matching the true positive rate across the groups being compared",
+      "Auditing the model for bias only after it has been deployed"
     ],
     answer: [0],
     why: "Group unaware = the decision is made without paying attention to which group the applicant belongs to (ignoring the sensitive attributes in the features).",
@@ -928,9 +938,9 @@ addQuestions([
     q: "What is the slides' verdict on 'group unaware' as a fairness strategy?",
     options: [
       "Insufficient, because proxies leak the attribute — use only as a baseline, not a fairness guarantee",
-      "It is the strongest available guarantee of fairness",
-      "It is the preferred approach in lending and hiring",
-      "It is identical to demographic parity"
+      "It is the strongest available guarantee of fairness in the framework",
+      "It is the preferred approach in lending and hiring decisions at scale",
+      "It is identical to demographic parity in every practical respect"
     ],
     answer: [0],
     why: "Group unaware is considered insufficient because proxies leak the attribute; use it only as a baseline, not a fairness guarantee.",
@@ -944,10 +954,10 @@ addQuestions([
     diff: "medium",
     q: "Which strategy uses different score cut-offs per group to meet a target criterion such as equal opportunity or equalized odds?",
     options: [
-      "Group-specific thresholds / post-processing",
-      "Demographic parity",
-      "Group unaware",
-      "Equal accuracy"
+      "Group-specific thresholds / post-processing — a different cut-off for each group",
+      "Demographic parity — equal favourable-prediction rates across the applicant groups",
+      "Group unaware — simply ignoring the sensitive attribute in the model's features",
+      "Equal accuracy — the same overall percentage correct for each group"
     ],
     answer: [0],
     why: "Group thresholds = group-specific thresholds applied as post-processing to satisfy a chosen criterion, e.g. equal opportunity or equalized odds.",
@@ -991,9 +1001,9 @@ addQuestions([
     q: "Which caveat do the slides attach to demographic parity?",
     options: [
       "It is widely taught but sometimes misaligned with 'merit' goals — use it when equal selection itself is the objective",
-      "It requires a different threshold per group",
-      "It is mathematically impossible to compute",
-      "It always coincides with equal opportunity"
+      "It requires a different decision threshold for each group, which means the model must be retrained from scratch",
+      "It is mathematically impossible to compute whenever the dataset contains more than one sensitive attribute",
+      "It always coincides with equal opportunity, so the two criteria can be used interchangeably in practice"
     ],
     answer: [0],
     why: "The slide notes demographic parity is widely taught but can conflict with merit-based goals; it fits cases where equal selection is the actual objective.",
@@ -1008,9 +1018,9 @@ addQuestions([
     q: "Equal opportunity requires:",
     options: [
       "The same true positive rate across groups — qualified people are equally likely to be approved",
-      "The same number of approvals per group",
-      "The same overall accuracy per group",
-      "The same false positive rate only"
+      "The same number of approvals granted to each group, regardless of how many applicants each group actually has",
+      "The same overall accuracy achieved for each group, measured across all their positive and negative cases",
+      "The same false positive rate only, leaving the true positive rate free to differ between the groups"
     ],
     answer: [0],
     why: "Equal opportunity = equal true positive rate (TPR) across groups; qualified applicants get approved at the same rate.",
@@ -1037,9 +1047,9 @@ addQuestions([
     q: "Why do the slides caution against 'equal accuracy' (accuracy parity)?",
     options: [
       "It is not a strong safeguard — it can hide disparities when base rates differ, so many prefer equalized odds (matching TPR and FPR)",
-      "It is too difficult to measure",
-      "It always over-favours the minority group",
-      "It is illegal under the EU AI Act"
+      "It is too difficult to measure in practice because most teams lack the tooling needed to compute it",
+      "It always over-favours the minority group, so it cannot be used in lending or hiring decisions at all",
+      "It is illegal under the EU AI Act, which requires a conformity assessment for every accuracy-parity reporting metric"
     ],
     answer: [0],
     why: "Accuracy parity is a weak safeguard that can hide disparities under differing base rates; equalized odds (matching both TPR and FPR) is often preferred.",
@@ -1054,9 +1064,9 @@ addQuestions([
     q: "Equalized odds means matching which two rates across groups?",
     options: [
       "True positive rate and false positive rate",
-      "Selection rate and accuracy",
-      "Prevalence and recall",
-      "Accuracy and F1 score"
+      "Selection rate and overall accuracy",
+      "Prevalence and recall across the dataset",
+      "Accuracy and the F1 score"
     ],
     answer: [0],
     why: "The slide parenthetically defines equalized odds as 'match TPR and FPR'.",
@@ -1074,7 +1084,8 @@ addQuestions([
       "Select qualified fairly → equal opportunity (often safest default)",
       "Quick patch without retraining → group thresholds (post-processing)",
       "Baseline only → group unaware (but audit for proxies)",
-      "Maximise profit → equal accuracy parity"
+      "Maximise profit → equal accuracy parity",
+      "Avoid measuring anything → group unaware with no proxy audit"
     ],
     answer: [0, 1, 2, 3],
     why: "The first four mappings come straight from the slide. There is no 'maximise profit' objective in the framework — and the slide cautions with equal accuracy unless you've checked the errors.",
@@ -1092,7 +1103,8 @@ addQuestions([
       "Measure all metrics on your validation data so you see the trade-offs",
       "Apply pre-processing, in-processing or post-processing to meet the chosen metric",
       "Document the choice plus trade-offs and monitor over time",
-      "Pick whichever criterion gives the highest overall accuracy"
+      "Pick whichever criterion gives the highest overall accuracy",
+      "Skip documentation so the choice can be changed later without a record"
     ],
     answer: [0, 1, 2, 3],
     why: "The first four steps are the recipe. Picking a criterion by accuracy is exactly what the slides warn against — accuracy parity can hide disparities.",
@@ -1131,9 +1143,9 @@ addQuestions([
     q: "In Solution 1 (group unaware), what was the outcome in the loan example?",
     options: [
       "Sorting by credit score alone, all six approved applicants happened to be male",
-      "Three men and three women were approved",
-      "Five men and one woman were approved",
-      "No applicants were approved"
+      "Three men and three women were approved, matching the applicant mix",
+      "Five men and one woman were approved, matching the historical pattern",
+      "No applicants were approved because none met the credit threshold"
     ],
     answer: [0],
     why: "Sorting purely by credit score and taking the top 6 resulted in all approved applicants being male.",
@@ -1177,9 +1189,9 @@ addQuestions([
     q: "Under Solution 2 (group thresholds), what share of each group got a loan?",
     options: [
       "62.5% of males (5 of 8) and 25% of females (1 of 4)",
-      "50% of males and 50% of females",
-      "75% of males and 50% of females",
-      "62.5% of females and 25% of males"
+      "50% of males and 50% of females were approved under this rule",
+      "75% of males and 50% of females were approved under this rule",
+      "62.5% of females and 25% of males were approved under this rule"
     ],
     answer: [0],
     why: "5 of 8 male candidates (62.5%) and 1 of 4 female candidates (25%) were granted loans, which some perceive as not fair enough.",
@@ -1220,10 +1232,10 @@ addQuestions([
     topic: "Fairness worked examples",
     type: "tf",
     diff: "medium",
-    q: "Under demographic parity in the example, women are 50% of applicants, so the aim is for roughly 50% of the approvals to be women, regardless of who is more qualified.",
+    q: "Under demographic parity the aim is to approve exactly the same number of men and women, whatever proportion of the applicant pool each group makes up.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — the slide explicitly says 'Women are 50% of applicants → aim for ~50% of approvals to be women (regardless of who's more qualified)'.",
+    answer: [1],
+    why: "False — demographic parity matches the favourable-prediction RATE to the applicant mix (women are 50% of applicants → aim for roughly 50% of approvals to be women), not an equal head-count regardless of the mix.",
     ref: "Deck 2 · slide 8"
   },
   {
@@ -1235,9 +1247,9 @@ addQuestions([
     q: "How is Solution 4 (equal opportunity / equal true-positive rate) described?",
     options: [
       "Among the people who would repay (the truly qualified), approve the same share in each group — per-group thresholds tuned until hit rates match",
-      "Approve the same total number of people from each group",
-      "Ignore group membership entirely and rank by score",
-      "Approve everyone above a single global threshold"
+      "Approve the same total number of people from each group, whatever the sizes of those groups happen to be in the applicant pool each cycle",
+      "Ignore group membership entirely and rank every applicant by score against one single common decision threshold, as group unaware does",
+      "Approve everyone above a single global threshold, then repeatedly adjust that threshold until the mix of approvals looks fair"
     ],
     answer: [0],
     why: "Equal opportunity matches the true positive rate: if 80% of qualified men are approved, roughly 80% of qualified women should be too.",
@@ -1310,9 +1322,9 @@ addQuestions([
     q: "Principle D (Responsible) applies to AI that affects the public and requires usage policies plus procedures to ensure:",
     options: [
       "Intensions are defined before deployment so outcomes and impact can be tracked, and users do not accept AI outputs uncritically",
-      "Every decision is made by a human",
-      "The AI is retrained every week",
-      "All outputs are published publicly"
+      "Every decision made by the system is reviewed and signed off by a human before it is executed",
+      "The AI is retrained every week on the latest data so that its behaviour cannot drift over time",
+      "All outputs are published publicly in an open register so that citizens can inspect them afterwards"
     ],
     answer: [0],
     why: "Principle D · Responsible — responsible usage policies (intentions defined before deployment so outcomes/impact can be tracked) and procedures so users do not accept AI outputs uncritically.",
@@ -1383,7 +1395,7 @@ addQuestions([
     type: "multi",
     diff: "hard",
     q: "Which of the following are principles listed on the 'General Principles' slide? (Select all that apply.)",
-    options: ["Lawful", "Transparent", "Explainable", "Profitable", "Robust"],
+    options: ["Lawful", "Transparent", "Explainable", "Profitable", "Robust", "Commercially viable"],
     answer: [0, 1, 2, 4],
     why: "The eight principles are Lawful, Transparent, Explainable, Responsible, Accountable, Robust, Fair, Beneficence/non-maleficence. 'Profitable' is not one of them.",
     ref: "Deck 2 · slide 12"
@@ -1424,7 +1436,7 @@ addQuestions([
     type: "multi",
     diff: "medium",
     q: "Which three 'fronts' explain why transparency matters? (Select all that apply.)",
-    options: ["Justifying decisions", "Right to know", "Duty of foresight", "Maximising shareholder value"],
+    options: ["Justifying decisions", "Right to know", "Duty of foresight", "Maximising shareholder value", "Protecting the vendor's trade secrets from competitors"],
     answer: [0, 1, 2],
     why: "The three fronts are justifying decisions (reasons plus paths to contest/appeal), the right to know, and the duty of foresight.",
     ref: "Deck 2 · slide 13"
@@ -1438,9 +1450,9 @@ addQuestions([
     q: "Under 'right to know', what are people entitled to explanations for?",
     options: [
       "To preserve agency, freedom and privacy — e.g. how they are tracked, what inferences are made, and how those inferences were produced",
-      "Only for decisions made by government agencies",
-      "Only after they have filed a lawsuit",
-      "Only if they paid for the service"
+      "Only when a decision was made by a government agency exercising statutory powers over the individual",
+      "Only after the individual has filed a formal complaint or lawsuit challenging the automated decision",
+      "Only for people who have paid for a premium tier of the service that offers enhanced data controls"
     ],
     answer: [0],
     why: "The right-to-know front says people are entitled to explanations to preserve agency, freedom and privacy — including how they're tracked, what inferences are made, and how those inferences were produced.",
@@ -1467,9 +1479,9 @@ addQuestions([
     q: "How is Explainable AI (XAI) defined in the slides?",
     options: [
       "AI systems designed to provide human-understandable explanations for their decisions, predictions or behaviours",
-      "AI systems that are always correct",
-      "AI systems that require no training data",
-      "AI systems whose source code is public"
+      "AI systems that produce always-correct outputs with no possibility of error",
+      "AI systems that can be trained without any labelled training data at all",
+      "AI systems whose source code and weights are published publicly"
     ],
     answer: [0],
     why: "XAI refers to AI systems designed to provide human-understandable explanations for their decisions, predictions or behaviours.",
@@ -1488,7 +1500,8 @@ addQuestions([
       "User adoption — clear explanations foster acceptance in real-world applications",
       "Ethical AI governance — supports fairness audits and reduces discrimination risks",
       "Regulatory alignment — meets legal transparency requirements in high-stakes industries",
-      "Guaranteed higher accuracy than any black-box model"
+      "Guaranteed higher accuracy than any black-box model",
+      "Removal of the need for any human oversight of the model's decisions"
     ],
     answer: [0, 1, 2, 3, 4],
     why: "The five listed benefits are accountability, model debugging, user adoption, ethical AI governance and regulatory alignment. XAI does not guarantee higher accuracy.",
@@ -1503,9 +1516,9 @@ addQuestions([
     q: "Why are some ML models described as 'black boxes'?",
     options: [
       "We know the inputs and outputs but not the internals — especially with neural networks",
-      "They are trained on encrypted data",
-      "Their licence forbids inspection",
-      "They only run on cloud servers"
+      "They are trained on encrypted data, so the weights cannot be inspected without the decryption key",
+      "Their licence forbids inspection, which means only the vendor can ever examine the internal logic",
+      "They only run on cloud servers, so the internal state is never accessible from the client device"
     ],
     answer: [0],
     why: "Black box: you know the inputs and outputs but not the internals, which is especially the case for neural networks.",
@@ -1539,7 +1552,8 @@ addQuestions([
       "Through textual descriptions",
       "Through visualizations",
       "By enabling counterfactual reasoning/explanations",
-      "By keeping every model smaller than 1 MB"
+      "By keeping every model smaller than 1 MB",
+      "By publishing the full training dataset alongside the model"
     ],
     answer: [0, 1, 2],
     why: "Textual descriptions, visualizations, and counterfactual reasoning/explanations are the approaches listed on the slide.",
@@ -1554,9 +1568,9 @@ addQuestions([
     q: "What does 'Feature Importance' quantify?",
     options: [
       "How much each input feature (e.g. age, income) influences a model's output",
-      "How many features a dataset contains",
-      "How long the model takes to train",
-      "How many hidden layers the model has"
+      "How many features the dataset contains in total",
+      "How long the model takes to train and retrain",
+      "How many hidden layers the model contains in total"
     ],
     answer: [0],
     why: "Feature importance = how much each input feature influences the model's output. It is XAI method #1 in the slides.",
@@ -1634,9 +1648,9 @@ addQuestions([
     q: "The SHAP-style example 'Age = +40% risk, health record = +30%, zip code = +10%' illustrates that SHAP:",
     options: [
       "Calculates how much each feature contributed to the AI's decision",
-      "Sorts the dataset by importance",
-      "Removes features from the model",
-      "Explains only the training process"
+      "Sorts the dataset by feature importance before the model is trained",
+      "Removes the least important features from the model and retrains it on the remainder",
+      "Explains only the training process rather than the individual predictions"
     ],
     answer: [0],
     why: "SHAP explains how much each factor contributed to the decision, fairly distributing credit/blame — the insurance example in the slides.",
@@ -1649,7 +1663,12 @@ addQuestions([
     type: "mcq",
     diff: "medium",
     q: "Which XAI method is described as 'sliding one knob while holding others steady'?",
-    options: ["PDP (Partial Dependence Plots)", "LIME", "SHAP", "Feature importance"],
+    options: [
+      "PDP (Partial Dependence Plots) — one feature varying while the others are held fixed",
+      "LIME — a local explanation of one individual prediction using small perturbations",
+      "SHAP — game-theoretic contributions split fairly among the input features",
+      "Feature importance — a global ranking of how much each input matters overall"
+    ],
     answer: [0],
     why: "PDP shows how changing one feature affects predictions while keeping all other features constant — like sliding one knob while holding others steady.",
     ref: "Deck 2 · slide 17"
@@ -1711,7 +1730,8 @@ addQuestions([
       "xAI tools make AI systems more interpretable so humans can understand how decisions are made",
       "They can help detect whether gender bias plays a role",
       "Transparency helps ensure the model is not operating in a 'black box'",
-      "They remove the need for any human oversight"
+      "They remove the need for any human oversight",
+      "They guarantee that every individual prediction the model makes is correct"
     ],
     answer: [0, 1, 2],
     why: "Interpretability, bias detection (e.g. gender bias) and avoiding black-box operation are all stated. Removing human oversight is not.",
@@ -1725,10 +1745,10 @@ addQuestions([
     diff: "medium",
     q: "In the healthcare example, how can XAI tools such as LIME help?",
     options: [
-      "They can explain why the system recommended one treatment for a male patient and a different one for a female patient with similar symptoms, helping spot biased patterns",
-      "They can guarantee the recommended treatment is clinically correct",
-      "They can replace the need for medical training data",
-      "They can automatically anonymise patient records"
+      "They can explain why the system recommended different treatments for a male and a female patient with similar symptoms, helping spot biased patterns",
+      "They can guarantee that the recommended treatment is clinically correct for the patient's diagnosed condition and history",
+      "They can replace the need for large annotated medical training datasets when building clinical decision models",
+      "They can automatically anonymise patient records before those records are stored in the hospital data warehouse"
     ],
     answer: [0],
     why: "The use case: XAI like LIME explains why different treatments were recommended for similar symptoms, which helps spot biased patterns and explain the AI's suggestions.",
@@ -1752,10 +1772,10 @@ addQuestions([
     topic: "XAI methods & tools",
     type: "tf",
     diff: "medium",
-    q: "SHAP and LIME are both model-agnostic, meaning they can be applied to different model types rather than only to one specific algorithm.",
+    q: "LIME only works with neural networks, whereas SHAP is the model-agnostic alternative.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — both are model-agnostic explanation techniques; SHAP is model-agnostic (Shapley values) and LIME is explicitly 'Model-Agnostic' in its name.",
+    answer: [1],
+    why: "False — LIME stands for Local Interpretable Model-agnostic Explanations: both LIME and SHAP can be applied across model types, not just to one algorithm.",
     ref: "Deck 2 · slides 16-18"
   },
 ]);
@@ -1788,10 +1808,10 @@ addQuestions([
     diff: "medium",
     q: "Why is 'sensitive data over-collection' a privacy risk?",
     options: [
-      "Training at terabyte-petabyte scale sweeps in health, finance and biometric data, so more sensitive data stored or transmitted means a higher chance of exposure or misuse",
-      "Because it makes models train more slowly",
-      "Because it increases cloud costs only",
-      "Because it reduces model accuracy"
+      "Training at terabyte-petabyte scale sweeps in health, finance and biometric data, raising the chance of exposure or misuse",
+      "Because larger training sets always improve model accuracy, so every available field should be collected",
+      "Because storing health and financial records in the cloud is cheaper per gigabyte than keeping them on-premises",
+      "Because regulators require organisations to retain every collected field indefinitely for future audits"
     ],
     answer: [0],
     why: "Large-scale training often sweeps in health, finance and biometric data; the more sensitive data stored/transmitted, the higher the chance of exposure or misuse.",
@@ -1879,7 +1899,7 @@ addQuestions([
     type: "multi",
     diff: "hard",
     q: "Which tactics are listed for data exfiltration? (Select all that apply.)",
-    options: ["Prompt injection", "Tool/plugin abuse", "API compromise to extract secrets", "Deleting the training data"],
+    options: ["Prompt injection", "Tool/plugin abuse", "API compromise to extract secrets", "Deleting the training data", "Encrypting the model weights with a frequently rotated key"],
     answer: [0, 1, 2],
     why: "Prompt injection, tool/plugin abuse and API compromise are the listed tactics used to extract secrets.",
     ref: "Deck 3 · slide 5"
@@ -1907,10 +1927,10 @@ addQuestions([
     topic: "Privacy risks: security & ops",
     type: "tf",
     diff: "medium",
-    q: "Even in-house AI applications can leak proprietary or personal information when certain prompts trigger spills.",
+    q: "Data leakage is confined to third-party cloud services; in-house AI applications cannot expose one user's information to another.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — the data-leakage bullet states this explicitly, noting that such spills can happen across sessions or tenants.",
+    answer: [1],
+    why: "False — the slide states that even in-house AI apps can leak proprietary or personal information when certain prompts trigger spills, including across sessions or tenants.",
     ref: "Deck 3 · slide 5"
   },
   {
@@ -1956,9 +1976,9 @@ addQuestions([
     q: "What does 'limit data collection' require?",
     options: [
       "Collect only what is lawful and necessary and aligned with people's reasonable expectations; set retention limits and delete ASAP",
-      "Collect as much as possible so models are more accurate",
-      "Keep data indefinitely in case it is needed later",
-      "Collect only after a breach has occurred"
+      "Collect as much data as possible so that the models are as accurate as they can possibly be made",
+      "Keep every dataset indefinitely in case it is needed for a future project or audit",
+      "Collect only the data that has already been exposed in a previous public breach"
     ],
     answer: [0],
     why: "Limit collection to lawful and necessary data that matches reasonable expectations, with retention limits and prompt deletion.",
@@ -1990,7 +2010,8 @@ addQuestions([
       "Criminal justice",
       "Finance",
       "Children's data",
-      "Publicly posted social-media photos"
+      "Publicly posted social-media photos",
+      "Publicly available weather and traffic data"
     ],
     answer: [0, 1, 2, 3, 4, 5],
     why: "The slide lists health, employment, education, criminal justice, finance and children's data as sensitive domains. Public social-media content is not one of the named sensitive domains.",
@@ -2004,10 +2025,10 @@ addQuestions([
     diff: "medium",
     q: "Which control is NOT mentioned under 'follow security best practices'?",
     options: [
-      "Making all training data public for transparency",
-      "Access controls",
-      "Encryption",
-      "Anonymization / pseudonymization"
+      "Making all training data public so that anyone can audit it",
+      "Enforcing role-based access controls on all stored personal data throughout its lifecycle",
+      "Encrypting personal data both at rest and in transit across every system",
+      "Applying anonymization or pseudonymization to direct personal identifiers"
     ],
     answer: [0],
     why: "Access controls, encryption and anonymization/pseudonymization are listed, plus hardening against prompt injection and data leakage. Publishing training data is not.",
@@ -2022,9 +2043,9 @@ addQuestions([
     q: "What does 'report on data use & storage' involve?",
     options: [
       "Honouring individual data requests about what is used and how, publishing plain-language summaries, and disclosing breaches for sensitive data",
-      "Publishing the model's source code",
-      "Sharing raw data with all employees",
-      "Reporting only to shareholders"
+      "Publishing the model's source code and weights so any user can independently verify how it works",
+      "Sharing the raw training data with all employees so that everyone can check for bias themselves",
+      "Reporting usage statistics to shareholders and regulators once a year in the annual report"
     ],
     answer: [0],
     why: "Honour individual data requests, publish plain-language summaries, and disclose breaches involving sensitive data.",
@@ -2039,9 +2060,9 @@ addQuestions([
     q: "Under 'use data-governance tools & programs', what should organisations maintain?",
     options: [
       "Data inventories/catalogs and dashboards of privacy assessments, managing issues via workflows across privacy and data owners",
-      "A single spreadsheet kept by the CTO",
-      "Only paper records for audit purposes",
-      "A list of employees with internet access"
+      "A single spreadsheet of AI projects, maintained by the CTO and reviewed once a year",
+      "Only paper records for audit purposes, filed centrally so that reviewers can retrieve them during an annual inspection visit",
+      "A list of employees with internet access, so the security team knows who can reach AI tools"
     ],
     answer: [0],
     why: "Keep data inventories/catalogs and dashboards of privacy assessments, and manage issues with workflows across privacy and data owners.",
@@ -2058,7 +2079,8 @@ addQuestions([
       "Minimize and anonymize training data",
       "Encrypt at rest and in transit",
       "Track evolving laws and convert them into enforceable policies for audits",
-      "Postpone all compliance work until after product launch"
+      "Postpone all compliance work until after product launch",
+      "Collect extra fields now in case a future model needs them"
     ],
     answer: [0, 1, 2],
     why: "Minimisation/anonymisation, encryption at rest and in transit, and translating evolving laws into enforceable audit-ready policies. Postponing compliance contradicts privacy-by-design.",
@@ -2073,9 +2095,9 @@ addQuestions([
     q: "Which two regulations are named alongside privacy-by-design automation in the slides?",
     options: [
       "GDPR and Bahrain PDPL (Personal Data Protection Law – Law No. 30 of 2018)",
-      "HIPAA and SOX",
-      "ISO 9001 and ISO 14001",
-      "CCPA and PCI-DSS"
+      "HIPAA and SOX, the US health-data and financial-reporting statutes",
+      "ISO 9001 and ISO 14001, the quality-management and environmental standards",
+      "CCPA and PCI-DSS, the California privacy act and card-industry data standard"
     ],
     answer: [0],
     why: "The slide names the GDPR and the Bahrain PDPL: Personal Data Protection Law – Law No. 30 of 2018.",
@@ -2117,7 +2139,7 @@ addQuestions([
     type: "multi",
     diff: "medium",
     q: "What should an Enterprise AI and Governance Strategy establish? (Select all that apply.)",
-    options: ["Structures", "Processes", "Procedures", "Profits"],
+    options: ["Structures", "Processes", "Procedures", "Profits", "Advertising campaigns for the organisation's AI products"],
     answer: [0, 1, 2],
     why: "The slide says the strategy should establish structures, processes and procedures within the IT and Data Governance realms.",
     ref: "Deck 3 · slide 9"
@@ -2131,9 +2153,9 @@ addQuestions([
     q: "Which NIST resource is linked on the 'Online resources' slide?",
     options: [
       "The AI Risk Management Framework (AI RMF) playbook — airc.nist.gov/airmf-resources/playbook/",
-      "The NIST Cybersecurity Framework 2.0",
-      "The NIST Privacy Engineering Guidelines",
-      "The NIST Post-Quantum Cryptography Standard"
+      "The NIST Cybersecurity Framework 2.0, covering security controls for critical infrastructure",
+      "The NIST Privacy Engineering Guidelines for de-identifying datasets before they are released",
+      "The NIST Post-Quantum Cryptography Standard for migrating to quantum-safe algorithms"
     ],
     answer: [0],
     why: "The slide links the risk management playbook at https://airc.nist.gov/airmf-resources/playbook/.",
@@ -2194,9 +2216,9 @@ addQuestions([
     q: "Who is ISO/IEC 42001 designed for?",
     options: [
       "Entities providing or utilizing AI-based products or services, to ensure responsible development and use of AI systems",
-      "Only government regulators",
-      "Only AI research laboratories",
-      "Only hardware manufacturers"
+      "Only national regulators and standards bodies that certify AI products for the public sector",
+      "Only academic and industrial research laboratories that design and train foundation models from scratch",
+      "Only hardware manufacturers that embed AI features into consumer devices, network equipment and vehicles"
     ],
     answer: [0],
     why: "It is designed for entities providing or utilizing AI-based products or services, ensuring responsible development and use of AI systems.",
@@ -2213,7 +2235,8 @@ addQuestions([
       "It is the world's first AI management system standard",
       "It addresses challenges AI poses such as ethical considerations, transparency and continuous learning",
       "It sets out a structured way to manage risks and opportunities associated with AI, balancing innovation with governance",
-      "It guarantees that AI systems will be 100% accurate"
+      "It guarantees that AI systems will be 100% accurate",
+      "It replaces the need for any national AI regulation"
     ],
     answer: [0, 1, 2],
     why: "First AI management system standard, addressing ethical considerations/transparency/continuous learning, and providing a structured way to manage AI risks and opportunities while balancing innovation with governance.",
@@ -2259,7 +2282,8 @@ addQuestions([
       "Companies adopting AI will need to follow governance standards",
       "As future engineers you may help design, audit or comply with these systems",
       "It builds trust — customers, regulators and employers prefer AI that meets standards",
-      "It replaces the need to study machine learning algorithms"
+      "It replaces the need to study machine learning algorithms",
+      "It exempts certified organisations from privacy law"
     ],
     answer: [0, 1, 2],
     why: "Companies must follow governance standards; future engineers may design, audit or comply; and standards build trust with customers, regulators and employers.",
@@ -2271,10 +2295,10 @@ addQuestions([
     topic: "ISO/IEC 42001: what & why",
     type: "tf",
     diff: "medium",
-    q: "ISO/IEC 42001 provides a framework for responsible, transparent and accountable AI.",
+    q: "ISO/IEC 42001 specifies which AI model architecture and vendor an organisation must adopt.",
     options: ["True", "False"],
-    answer: [0],
-    why: "True — 'Provides a framework for responsible, transparent, and accountable AI.'",
+    answer: [1],
+    why: "False — the standard provides a framework for responsible, transparent and accountable AI and is explicitly not product-specific: it is how you run AI, not which model you pick.",
     ref: "Deck 3 · slide 12"
   },
   {
@@ -2307,7 +2331,8 @@ addQuestions([
       "Assign roles",
       "Keep records",
       "Improve over time",
-      "Guarantee zero AI incidents"
+      "Guarantee zero AI incidents",
+      "Publish the weights of every model it deploys"
     ],
     answer: [0, 1, 2, 3, 4],
     why: "The slide lists identify risks, set controls, assign roles, keep records and improve over time. Zero incidents can never be guaranteed — the framework is about managing risk and improving continuously.",
@@ -2334,9 +2359,9 @@ addQuestions([
     q: "What does Annex A of ISO/IEC 42001 contain?",
     options: [
       "A controls list with concrete control topics such as data governance, model risk, testing/validation, monitoring and incident management",
-      "Practical implementation guidance for the controls",
-      "Typical AI objectives and risk sources",
-      "References to sector standards in health, finance and education"
+      "Practical implementation guidance for the controls, covering process owners, inputs/outputs and checkpoints, with worked examples",
+      "Typical AI objectives such as safety, fairness and privacy, together with the risk sources an organisation should consider when scoping its AIMS",
+      "References to sector standards in health, finance and education, so that requirements can be aligned with domain rules"
     ],
     answer: [0],
     why: "Annex A = controls list (concrete control topics). Annex B = how-to implementation guidance; Annex C = objectives & risks; Annex D = sector links.",
@@ -2402,7 +2427,8 @@ addQuestions([
       "Operation",
       "Performance evaluation",
       "Continual improvement",
-      "Quarterly profit reporting"
+      "Quarterly profit reporting",
+      "Shareholder value maximisation"
     ],
     answer: [0, 1, 2, 3, 4, 5],
     why: "The six key requirement areas are Leadership, Planning, Support, Operation, Performance Evaluation and Continual Improvement. Profit reporting is not part of ISO/IEC 42001.",
@@ -2446,9 +2472,9 @@ addQuestions([
     q: "In ISO/IEC 42001 terms, what is an 'AI Provider'?",
     options: [
       "An organisation offering AI-enabled products/services (e.g. a platform or SaaS vendor), which must govern delivery and support",
-      "An organisation that designs, develops, tests and deploys AI models",
-      "An organisation that only uses AI to make decisions",
-      "An external certification body"
+      "An organisation that designs, develops, tests and deploys AI models for customers",
+      "An organisation that only uses AI to make decisions about people or to serve them",
+      "An independent external certification body that audits AI management systems"
     ],
     answer: [0],
     why: "AI Provider = offers AI-enabled products/services (platform or SaaS vendor) and must govern delivery & support.",
@@ -2492,9 +2518,9 @@ addQuestions([
     q: "What is the difference between an AI Provider and an AI Producer?",
     options: [
       "The Provider offers AI-enabled products/services and governs delivery and support, while the Producer designs/develops/tests/deploys the AI and owns MLOps, validation and release",
-      "The Provider trains models and the Producer sells them",
-      "They are the same role with different names",
-      "The Producer only uses AI; the Provider only audits it"
+      "The Provider trains the models and sells licences, while the Producer writes the policy documents that govern how they are used",
+      "The Provider designs, develops and tests the AI and owns MLOps, while the Producer offers the finished product to customers and governs delivery and support",
+      "The roles describe the same responsibilities at different stages, so the terms can be used interchangeably in most large organisations"
     ],
     answer: [0],
     why: "Provider = offers AI products/services (governs delivery & support). Producer = designs/develops/tests/deploys (owns MLOps, validation, release). User = applies AI with oversight.",
@@ -2512,7 +2538,8 @@ addQuestions([
       "Gap assessment — compare current practice to Annex A, rate risks, pick quick wins vs longer projects",
       "Implement & evidence — roll out priority controls and keep proof such as policies, training records, model cards, test reports and sign-offs",
       "Operate & review — schedule monitoring, audits and management reviews, feeding findings into continuous improvement",
-      "Skip documentation so the first release ships faster"
+      "Skip documentation so the first release ships faster",
+      "Certify the AIMS before any controls have been implemented"
     ],
     answer: [0, 1, 2, 3],
     why: "The four steps are inventory & scope, gap assessment, implement & evidence, and operate & review. Skipping documentation contradicts the evidence requirement.",
@@ -2525,7 +2552,7 @@ addQuestions([
     type: "multi",
     diff: "hard",
     q: "What evidence does 'implement & evidence' suggest keeping? (Select all that apply.)",
-    options: ["Policies", "Training records", "Model cards", "Test reports", "Sign-offs", "Verbal assurances from the team"],
+    options: ["Policies", "Training records", "Model cards", "Test reports", "Sign-offs", "Verbal assurances from the team", "The vendor's marketing brochure for the AI product"],
     answer: [0, 1, 2, 3, 4],
     why: "The slide lists policies, training records, model cards, test reports and sign-offs as the proof to retain. Verbal assurances are not auditable evidence.",
     ref: "Deck 3 · slide 17"
@@ -2541,7 +2568,8 @@ addQuestions([
       "An approved AI policy",
       "RACI for the data/model lifecycle",
       "Escalation paths",
-      "The company's revenue growth"
+      "The company's revenue growth",
+      "The number of AI models currently in production"
     ],
     answer: [0, 1, 2],
     why: "Auditors look for an approved AI policy, RACI for the data/model lifecycle, and escalation paths.",
@@ -2558,7 +2586,8 @@ addQuestions([
       "Data provenance and consent/rights basis",
       "Labeling SOPs",
       "Model documentation (version, metrics, limitations)",
-      "Marketing brochures"
+      "Marketing brochures",
+      "The curriculum vitae of the model's lead engineer"
     ],
     answer: [0, 1, 2],
     why: "Lifecycle records = data provenance, consent/rights basis, labeling SOPs and model documentation (version, metrics, limitations).",
@@ -2576,7 +2605,8 @@ addQuestions([
       "Incident tickets",
       "Retraining logs",
       "Post-incident reviews",
-      "Marketing campaign performance"
+      "Marketing campaign performance",
+      "The organisation's annual sustainability report"
     ],
     answer: [0, 1, 2, 3],
     why: "Operations evidence = monitoring dashboards, incident tickets, retraining logs and post-incident reviews. Marketing metrics are unrelated to AIMS auditing.",
@@ -2593,7 +2623,8 @@ addQuestions([
       "Pre-deployment risk assessments",
       "Bias and safety tests",
       "Approvals and rollback plans",
-      "Employee holiday schedules"
+      "Employee holiday schedules",
+      "The office floor plan showing where the AI team sits"
     ],
     answer: [0, 1, 2],
     why: "Testing & release evidence = pre-deployment risk assessments, bias/safety tests, approvals and rollback plans.",
@@ -2608,9 +2639,9 @@ addQuestions([
     q: "Which pitfall is described as 'We'll fix it later'?",
     options: [
       "Not baking governance into design — governance must be part of design, not only added after launch",
-      "Assigning named owners for each control",
-      "Sampling evidence from live projects",
-      "Planning ongoing monitoring"
+      "Assigning named owners for each control and AI system rather than leaving responsibility vague",
+      "Sampling evidence from live projects instead of relying on documents written for the auditor",
+      "Planning ongoing monitoring for drift, bias and safety, with thresholds and response playbooks"
     ],
     answer: [0],
     why: "'We'll fix it later': Bake governance into design, not only after launch.",
@@ -2642,9 +2673,9 @@ addQuestions([
     q: "What does the 'paper-only compliance' pitfall mean?",
     options: [
       "Documents should align with real workflows, and evidence must be sampled from live projects",
-      "Policies must be printed and signed in ink",
-      "Only paper records are acceptable during audits",
-      "Compliance work must be done by external consultants"
+      "Policies must be printed and signed in ink by a named owner",
+      "Only paper records are acceptable as evidence during an official audit",
+      "Compliance work must be done by external consultants each year"
     ],
     answer: [0],
     why: "'Paper-only compliance': Align documents with real workflows; sample evidence from live projects.",
@@ -2681,9 +2712,9 @@ addQuestions([
     q: "A model looks excellent on accuracy, but one group is approved at a much lower rate than another. Which combination of ideas from the three decks best addresses this?",
     options: [
       "Measure fairness metrics, audit for proxies and bias, use XAI to explain decisions, and govern the system with a framework such as ISO/IEC 42001",
-      "Retrain with more data until accuracy improves further",
-      "Delete the sensitive attribute and redeploy",
-      "Publish the model's source code"
+      "Retrain with more data until accuracy improves further, since higher overall accuracy eliminates disparate outcomes entirely",
+      "Delete the sensitive attribute from the training data and redeploy, because the model cannot use information it never receives",
+      "Publish the model's source code and training data so that external researchers can identify any remaining bias"
     ],
     answer: [0],
     why: "Deck 1 shows accuracy metrics hide bias; Deck 2 provides fairness metrics and XAI to expose and explain it; Deck 3 provides governance (ISO/IEC 42001) to make the controls durable.",
@@ -2698,9 +2729,9 @@ addQuestions([
     q: "Which statement about bias, fairness and privacy across the three decks is CORRECT?",
     options: [
       "Bias can originate in data collection, fairness requires choosing a criterion and documenting trade-offs, and privacy risks span collection, security, model design and governance",
-      "All three problems are solved by one metric",
-      "Bias is only a data problem and privacy is only a legal problem",
-      "Privacy and fairness are unrelated to model design"
+      "All three problems are solved automatically once a single fairness metric is applied consistently across all groups",
+      "Bias is purely a data-collection problem and privacy is purely a legal compliance problem for the regulators involved",
+      "Privacy and fairness are entirely unrelated to how the model itself is designed or deployed in practice"
     ],
     answer: [0],
     why: "Deck 1 locates bias in data/labels and human choices; Deck 2 shows fairness is context-dependent with trade-offs you must document; Deck 3 traces privacy concerns to collection, cybersecurity, model design and governance.",
@@ -2718,7 +2749,8 @@ addQuestions([
       "Data preprocessing: re-sampling, augmentation and adversarial debiasing",
       "Explainability methods such as LIME, SHAP, PDP and counterfactuals",
       "Governance controls, monitoring and documented evidence (ISO/IEC 42001)",
-      "Removing the sensitive attribute from the dataset"
+      "Removing the sensitive attribute from the dataset",
+      "Rewriting the model's documentation to describe it as fair"
     ],
     answer: [0, 1, 2, 3],
     why: "All four are concrete countermeasures presented in the decks. Removing the sensitive attribute is explicitly dismissed ('no use. The AI system can infer them!').",
@@ -2733,9 +2765,9 @@ addQuestions([
     q: "Which sequence best reflects the reasoning the decks ask you to apply to a high-stakes AI system?",
     options: [
       "Identify the harm and its risk tier → check data and label provenance → choose and document a fairness criterion → explain decisions → govern, monitor and keep evidence",
-      "Improve accuracy → ship → add a disclaimer",
-      "Collect more data → deploy → wait for complaints",
-      "Buy a certified model → assume it is fair → publish a privacy policy"
+      "Improve accuracy until it exceeds the human baseline → ship the model → add a disclaimer to the user interface → wait for complaints to arrive through support channels",
+      "Collect as much data as possible → train the largest available model → deploy it to production as quickly as possible → monitor only the aggregate throughput of user requests each day",
+      "Buy a certified third-party model → assume that certification makes it fair → publish a privacy policy → revisit the decision only if a regulator opens a formal inquiry"
     ],
     answer: [0],
     why: "This mirrors the course arc: bias sources and risk levels (Deck 1), fairness criteria and XAI (Deck 2), privacy and governance with evidence (Deck 3).",
@@ -2762,9 +2794,9 @@ addQuestions([
     q: "Which named resource or standard from the decks is correctly matched?",
     options: [
       "NIST AI RMF — risk-management framing of fairness; ISO/IEC 42001 — AI management system; EU AI Act — risk tiers; GDPR and Bahrain PDPL — privacy law",
-      "ISO/IEC 42001 — privacy regulation; GDPR — AI fairness metric",
-      "EU AI Act — explainability library; LIME — ISO standard",
-      "NIST AI RMF — a Python bias toolkit"
+      "ISO/IEC 42001 — privacy regulation; GDPR — AI fairness metric; EU AI Act — explainability library; NIST AI RMF — a test suite",
+      "EU AI Act — an explainability library; LIME — an ISO management standard; SHAP — a privacy regulation; ISO 27001 — a fairness metric",
+      "NIST AI RMF — a Python bias toolkit; Fairlearn — the EU risk-tier framework; GDPR — an ISO management system for AI"
     ],
     answer: [0],
     why: "NIST AI RMF frames fairness as risk management (Deck 2), ISO/IEC 42001 is the AI management system standard (Deck 3), the EU AI Act defines risk levels (Deck 1), and GDPR/Bahrain PDPL are privacy laws (Deck 3).",
@@ -2854,9 +2886,9 @@ addQuestions([
     q: "Which statement correctly separates transparency from explainability?",
     options: [
       "Transparency is access to information about how a system works (an ethically neutral means), while explainability is the ability to provide an explanation of a specific output",
-      "Explainability is access to information; transparency is the explanation of a specific output",
-      "The two terms are defined identically in the slides",
-      "Transparency applies only to datasets, and explainability only to models"
+      "Explainability is access to information about how a system works, while transparency is the ability to provide an explanation of a specific output for a decision",
+      "The two terms are defined identically in the slides, so either one can be substituted for the other when auditing a system or writing its model documentation",
+      "Transparency applies only to the datasets used in training, while explainability applies only to the internal architecture of the model"
     ],
     answer: [0],
     why: "Transparency = access to information about how a system works (Principle B / Deck 2 slide 13). Explainable = the ability to provide an explanation of output (Principle C).",
@@ -2869,7 +2901,12 @@ addQuestions([
     type: "mcq",
     diff: "hard",
     q: "Data collected for fraud detection is quietly reused to train a marketing model. Which risk is this?",
-    options: ["Purpose creep (use beyond permission)", "Data leakage", "Label bias", "Sample bias"],
+    options: [
+      "Purpose creep — data collected for one purpose is quietly reused for another",
+      "Data leakage — bugs, logs or misconfigurations expose other users' data accidentally and across tenants",
+      "Label bias — annotators systematically mislabel one group's content during annotation",
+      "Sample bias — a group is over-represented or under-represented in the training set"
+    ],
     answer: [0],
     why: "Reusing data for an undisclosed purpose is 'purpose creep'; the slides note it undermines privacy rights and trust even where original consent existed.",
     ref: "Deck 3 · slide 4"
@@ -2912,9 +2949,9 @@ addQuestions([
     q: "Which pairing of ISO/IEC 42001 role and responsibility is CORRECT?",
     options: [
       "Producer → designs/develops/tests/deploys and owns MLOps, validation and release; Provider → offers AI products/services and governs delivery and support; User → ensures fit-for-purpose use, monitoring and human oversight",
-      "Producer → sells licences; Provider → trains models; User → certifies the system",
-      "Producer → only monitors incidents; Provider → only writes policy; User → only audits",
-      "All three roles have identical responsibilities"
+      "Producer → sells licences and handles billing; Provider → trains the models and owns the training pipeline; User → certifies the finished system against the published standard",
+      "Producer → only monitors incidents after release; Provider → only writes the AI policy documents; User → only conducts internal audits, with no responsibility for how the system is used in practice",
+      "All three roles have identical responsibilities under the standard, so a single team can hold any combination of them without changing its documented obligations"
     ],
     answer: [0],
     why: "These are exactly the three role definitions given on the ISO/IEC 42001 organisations slide.",
