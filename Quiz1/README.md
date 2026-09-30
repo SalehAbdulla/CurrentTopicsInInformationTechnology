@@ -1,5 +1,8 @@
 # IT7013 · Quiz 1 Trainer — Ethical AI 1, 2 & 3
 
+> **Live version (share this link):** <https://salehabdulla.github.io/CurrentTopicsInInformationTechnology/Quiz1/>
+> — nothing to install, works on a phone, and your results stay in your own browser.
+
 An offline, zero-dependency study app for **IT7013 Current Topics in IT — Quiz 1** (on campus, week starting **Sunday 4 October 2026**), covering the three slide decks:
 
 | Deck | File | Topics covered |
