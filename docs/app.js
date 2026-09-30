@@ -27,7 +27,7 @@
     { id: 3, name: "Ethical AI -3", hint: "privacy & ISO/IEC 42001" }
   ];
 
-  var LETTERS = ["A", "B", "C", "D", "E", "F"];
+  var LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
   /* -------------------------------- state -------------------------------- */
   var TOPICS = window.TOPICS || {};
@@ -984,8 +984,8 @@
     var it = session ? currentItem() : null;
     if (!it) return;
 
-    if (/^[1-6]$/.test(e.key)) { e.preventDefault(); chooseOption(Number(e.key) - 1); return; }
-    var li = "abcdef".indexOf(String(e.key).toLowerCase());
+    if (/^[1-8]$/.test(e.key)) { e.preventDefault(); chooseOption(Number(e.key) - 1); return; }
+    var li = "abcdefgh".indexOf(String(e.key).toLowerCase());
     if (li !== -1) { e.preventDefault(); chooseOption(li); return; }
     if (e.key === "Enter") {
       e.preventDefault();
