@@ -97,6 +97,22 @@ node tools/structure-check.js  # index.html ↔ app.js wiring → "STRUCTURE CHE
 
 It checks: unique ids, valid deck/topic/type/difficulty, answer indices in range, `tf` options exactly `True/False`, exactly one answer for `mcq`, at least two (but not all) for `multi`, non-empty explanations and references, no duplicated question text or options — and it prints the full distribution.
 
+### Keeping the bank honest (the "tell" lint)
+
+A bank whose correct option is conspicuously longer than its distractors, or where "True" is almost always the answer, or where every multi-select item is "all but one correct", can be beaten by exam technique instead of knowledge — and then a practice score stops predicting the real quiz. `validate.js` now **fails** if any of these drift out of range:
+
+| Check | Limit | Current |
+|---|---|---|
+| questions where the correct option is ≥2× the longest distractor | 0 | **0** |
+| median correct : distractor word ratio | ≤ 1.15 | **1.00** |
+| questions with a length ratio ≥ 1.5 | ≤ 20% | **9.8%** |
+| questions where the correct option is strictly the longest | ≤ 55% | **42.3%** |
+| true/false items answering "True" | 40–60% | **48.1%** |
+| multi-select items shaped "all but one correct" | ≤ 50% | **0%** |
+| "all / none of the above" options | 0 | **0** |
+
+When you add or edit a question, write each distractor so it is **comparable in length and specificity** to the correct answer — aim to straddle it (one slightly longer, one about equal, one slightly shorter) so length carries no signal in either direction. Keep true/false answers unpredictable, and give multi-select items at least two genuinely tempting wrong options.
+
 ### Adding or editing questions
 
 Append to the relevant `addQuestions([...])` block in `questions.js`:
