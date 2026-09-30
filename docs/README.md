@@ -1,6 +1,6 @@
 # IT7013 · Quiz 1 Trainer — Ethical AI 1, 2 & 3
 
-> **Live version (share this link):** <https://salehabdulla.github.io/CurrentTopicsInInformationTechnology/Quiz1/>
+> **Live version (share this link):** <https://salehabdulla.github.io/CurrentTopicsInInformationTechnology/>
 > — nothing to install, works on a phone, and your results stay in your own browser.
 
 An offline, zero-dependency study app for **IT7013 Current Topics in IT — Quiz 1** (on campus, week starting **Sunday 4 October 2026**), covering the three slide decks:
@@ -15,14 +15,14 @@ An offline, zero-dependency study app for **IT7013 Current Topics in IT — Quiz
 
 ## Quick start
 
-**Option A — just open it**
+**Option A — open it locally**
 
-Double-click `index.html` (or right-click → Open With → your browser). Everything runs locally, nothing is uploaded, and no internet connection is needed.
+Double-click `docs/index.html` (or right-click → Open With → your browser). Everything runs locally, nothing is uploaded, and no internet connection is needed.
 
-**Option B — serve it** (recommended if your browser restricts storage on `file://`)
+**Option B — serve it locally** (recommended if your browser restricts storage on `file://`)
 
 ```bash
-cd Quiz1
+cd docs
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
@@ -34,17 +34,21 @@ Progress (attempts, per-topic accuracy, preferences, unfinished session) is kept
 ## Files
 
 ```
-Quiz1/
+docs/                      ← this folder is the GitHub Pages site
 ├─ index.html      # app shell — Start / Quiz / Results / Flashcards / Cheat sheet / Progress
 ├─ styles.css      # dark + light theme, responsive layout, print styles
 ├─ questions.js    # the question bank (186 questions) + cheat-sheet content  ← the data
 ├─ app.js          # the engine: modes, grading, shuffling, timer, storage
 ├─ README.md       # this file
+├─ .nojekyll       # serve assets as-is on GitHub Pages
 └─ tools/
    ├─ validate.js        # machine-checks the bank (no dependencies)
    ├─ structure-check.js # verifies index.html ↔ app.js wiring (no dependencies)
    └─ e2e.js             # optional headless UI test (needs jsdom, see bottom)
 ```
+
+The lecture PDFs sit next to this folder in the repository working copy. They are listed in `.gitignore`, so they are never committed and never published — only the trainer is.
+
 
 ---
 
@@ -86,7 +90,7 @@ Extras: filter by **deck**, **topic** and **question type**; choose how many que
 Every question carries an explanation (`why`) and a slide reference (`ref`, e.g. *Deck 2 · slide 5*) so any claim can be checked against the original PDFs. Re-run the validator after any edit:
 
 ```bash
-cd Quiz1
+cd docs
 node tools/validate.js         # question bank integrity  → "ALL CHECKS PASSED ✓"
 node tools/structure-check.js  # index.html ↔ app.js wiring → "STRUCTURE CHECK PASSED ✓"
 ```
@@ -148,7 +152,7 @@ The quiz format is assumed to be MCQ / true-false (per your note), so "select al
 `tools/e2e.js` loads the real app in jsdom and drives it — setup filters, a practice run to 100%, results & review, exam simulation with navigator/flagging, stats, flashcards, weak drill, and resume-after-reload. jsdom is **not** a project dependency:
 
 ```bash
-cd Quiz1
+cd docs
 npm install jsdom --no-save
 node tools/e2e.js      # expect: "ALL E2E CHECKS PASSED ✓ (128 checks)"
 ```

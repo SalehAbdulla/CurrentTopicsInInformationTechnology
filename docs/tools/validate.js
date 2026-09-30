@@ -1,6 +1,6 @@
 /* ============================================================================
  * tools/validate.js — machine-checks the question bank.
- * Run from the Quiz1 folder:   node tools/validate.js
+ * Run from the docs folder:   node tools/validate.js
  * ========================================================================== */
 
 const path = require("path");

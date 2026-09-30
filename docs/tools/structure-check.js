@@ -1,4 +1,4 @@
-/* One-off structural checker: index.html vs app.js (run from the Quiz1 folder). */
+/* One-off structural checker: index.html vs app.js (run from the docs folder). */
 const fs = require("fs");
 const path = require("path");
 const dir = path.join(__dirname, "..");

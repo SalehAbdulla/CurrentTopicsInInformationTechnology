@@ -6,7 +6,7 @@
  * resume-after-reload.
  *
  * jsdom is NOT a project dependency. To run it:
- *     cd Quiz1
+ *     cd docs
  *     npm install jsdom --no-save        # or: npm i -g jsdom and set NODE_PATH
  *     node tools/e2e.js
  *
