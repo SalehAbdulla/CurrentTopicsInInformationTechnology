@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IT7013 · Current Topics in IT — Quiz 1 Trainer</title>
+<meta name="description" content="Shareable quiz trainer for IT7013 Quiz 1 (Ethical AI 1, 2 and 3) — 186 questions, practice and timed exam modes." />
+<meta name="color-scheme" content="dark light" />
+<style>
+  :root {
+    --bg: #0b1020;
+    --card: #141b30;
+    --line: #27324e;
+    --text: #eaeffb;
+    --muted: #9aa8c4;
+    --accent: #4f8cff;
+    --good: #34d399;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: grid; place-items: center; padding: 2rem 1.15rem;
+    background: radial-gradient(1100px 600px at 15% -10%, #1b2a55 0%, var(--bg) 55%) var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { width: 100%; max-width: 660px; }
+  .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .74rem; }
+  h1 { font-size: clamp(1.55rem, 4.4vw, 2.2rem); line-height: 1.2; margin: .5rem 0 .7rem; }
+  p { margin: 0 0 .8rem; color: var(--muted); }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.4rem 1.3rem; box-shadow: 0 18px 50px rgba(0, 0, 0, .38);
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: var(--accent); color: #fff; text-decoration: none;
+    padding: .8rem 1.35rem; border-radius: 12px; font-weight: 700; margin: .5rem .5rem .3rem 0;
+  }
+  .cta:hover { filter: brightness(1.08); }
+  .cta.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  ul.facts { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .45rem; }
+  ul.facts li { display: flex; gap: .6rem; font-size: .93rem; color: var(--muted); }
+  ul.facts li b { color: var(--text); font-weight: 600; }
+  ul.facts li::before { content: "✔"; color: var(--good); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; margin-top: 1rem; }
+  .box { background: #101728; border: 1px solid var(--line); border-radius: 12px; padding: .7rem .8rem; }
+  .box .n { font-size: 1.4rem; font-weight: 800; }
+  .box .l { font-size: .76rem; color: var(--muted); }
+  footer { margin-top: 1rem; font-size: .78rem; color: var(--muted); text-align: center; }
+  code { background: #101728; border: 1px solid var(--line); border-radius: 6px; padding: .1rem .35rem; font-size: .85em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="eyebrow">IT7013 · Current Topics in IT</div>
+    <h1>Quiz 1 Trainer — Ethical AI 1, 2 &amp; 3</h1>
+    <p>
+      An offline study app for <strong>Quiz 1</strong> (week starting Sunday 4&nbsp;October&nbsp;2026),
+      built directly from the three lecture decks: bias &amp; the EU AI Act risk tiers, fairness criteria
+      &amp; Explainable AI, and privacy &amp; ISO/IEC 42001.
+    </p>
+
+    <a class="cta" href="Quiz1/index.html">▶ Open the trainer</a>
+    <a class="cta secondary" href="Quiz1/README.md">How to use it</a>
+
+    <div class="grid">
+      <div class="box"><div class="n">186</div><div class="l">questions</div></div>
+      <div class="box"><div class="n">3</div><div class="l">slide decks covered</div></div>
+      <div class="box"><div class="n">4</div><div class="l">study modes</div></div>
+      <div class="box"><div class="n">100%</div><div class="l">offline · no tracking</div></div>
+    </div>
+
+    <ul class="facts">
+      <li><b>Practice</b> — instant grading, an explanation and the slide reference for every question.</li>
+      <li><b>Exam simulation</b> — timed, answers hidden, question navigator and flagging.</li>
+      <li><b>Weak points</b> — automatically drills the topics where your accuracy is lowest.</li>
+      <li><b>Lightning</b> — 10 random questions in 5 minutes for a daily warm-up.</li>
+      <li><b>Cheat sheet &amp; flashcards</b> — printable revision of the high-yield facts and trap pairs.</li>
+      <li>Your progress is stored <b>in your own browser only</b> — nothing is uploaded anywhere.</li>
+    </ul>
+  </div>
+  <footer>
+    Open <code>Quiz1/index.html</code> directly, or visit the trainer at <code>/Quiz1/</code> on this site.
+  </footer>
+</main>
+</body>
+</html>
